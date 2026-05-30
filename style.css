@@ -1,0 +1,43 @@
+body{
+    font-family: Verdana;
+    color: #444;
+    letter-spacing: 1px;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+#page-wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 6px rgba(32, 32, 32, 0.2);
+    border: 1px solid lightgray;
+    padding: 0 0 20px;
+    overflow: hidden;
+}
+
+#header{
+    background: #eee;
+    padding: 10px 0;
+}
+
+#header h1, #header p{
+    width: 100%;
+    text-align: center;
+}
+
+#header input{
+    width: 80%;
+    padding: 8px;
+    display:block;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #444;
+}
+
