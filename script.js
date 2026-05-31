@@ -1,8 +1,15 @@
 const list = document.querySelector('#drugs-list ul');
-console.log(list);
+list.addEventListener('click',function(e){
+    if(e.target.className==='delete'){
+        const li = e.target.parentElement;
+        list.removeChild(li);
+    }
+})
+
+
+
 // Add medicine
 const addMed = document.forms['add-medicine'];
-console.log(addMed);
 addMed.addEventListener('submit',function(e){
     e.preventDefault();
     const name = addMed.querySelector('input[type=text]').value;
