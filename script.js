@@ -1,0 +1,32 @@
+const list = document.querySelector('#drugs-list ul');
+console.log(list);
+// Add medicine
+const addMed = document.forms['add-medicine'];
+console.log(addMed);
+addMed.addEventListener('submit',function(e){
+    e.preventDefault();
+    const name = addMed.querySelector('input[type=text]').value;
+    const quantity = addMed.querySelector('input[type=number]').value;
+
+    // create list items
+    const li = document.createElement('li');
+    const medName = document.createElement('span');
+    const medQuantity = document.createElement('span');
+    const deleteBtn = document.createElement('span');
+
+    // add content
+    medName.textContent = name;
+    medQuantity.textContent = quantity;
+    deleteBtn.textContent = 'Delete';
+
+    // add classes
+    medName.classList.add('name');
+    medQuantity.classList.add('quantity');
+    deleteBtn.classList.add('delete');
+
+    // append to list
+    li.appendChild(medName);
+    li.appendChild(medQuantity);
+    li.appendChild(deleteBtn);
+    list.appendChild(li);
+});
