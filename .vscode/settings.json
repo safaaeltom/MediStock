@@ -1,5 +1,0 @@
-{
-    "js/ts.suggest.enabled": false,
-    "terminal.integrated.suggest.enabled": false,
-    "js/ts.suggest.includeAutomaticOptionalChainCompletions": false
-}

@@ -10,7 +10,7 @@ h1, h2{
 
 #page-wrapper{
     width: 90%;
-    max-width: 960px;
+    max-width: 1000px;
     margin: 20px auto;
     border-radius: 10px;
     box-sizing: border-box;
@@ -31,7 +31,7 @@ h1, h2{
 }
 
 #header input{
-    width: 80%;
+    width: 90%;
     padding: 8px;
     display:block;
     margin: 20px auto;
@@ -41,3 +41,25 @@ h1, h2{
     color: #444;
 }
 
+#drugs-list, #add-medicine{
+    margin: 20px;
+}
+
+#drugs-list ul{
+    list-style: none;
+    padding: 0;
+}
+
+#drugs-list li{
+    padding: 10px;
+    border-left: 5px solid #a87171;
+    margin: 10px;
+}
+#drugs-list li:hover{
+    background: #eee;
+}
+.delete{
+    color: #a87171;
+    cursor: pointer;
+    float: right;
+}
