@@ -55,11 +55,31 @@ h1, h2{
     border-left: 5px solid #a87171;
     margin: 10px;
 }
+
 #drugs-list li:hover{
     background: #eee;
 }
+
 .delete{
     color: #a87171;
     cursor: pointer;
     float: right;
+}
+
+#add-medicine input{
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+#add-medicine button{
+    padding: 8px 8px;
+    background: #a87171;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
