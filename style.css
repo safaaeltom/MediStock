@@ -51,9 +51,13 @@ h1, h2{
 }
 
 #medicines-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     border-left: 5px solid #a87171;
-    margin: 10px;
+    margin: 10px 0;
+    gap: 10px;
 }
 
 #medicines-list li:hover{

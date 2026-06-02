@@ -10,8 +10,10 @@ list.addEventListener('click',function(e){
 
 // Add medicine
 const addMed = document.forms['add-medicine'];
+
 addMed.addEventListener('submit',function(e){
     e.preventDefault();
+
     const name = addMed.querySelector('input[type=text]').value;
     const quantity = addMed.querySelector('input[type=number]').value;
 
@@ -35,9 +37,14 @@ addMed.addEventListener('submit',function(e){
     li.appendChild(medName);
     li.appendChild(medQuantity);
     li.appendChild(deleteBtn);
+
     list.appendChild(li);
+
+    checkStock();
 });
 
+//stock check
+function checkStock(){
 const medicinesList = document.querySelectorAll('#medicines-list li');
 
 medicinesList.forEach((medicine) => {
@@ -51,3 +58,6 @@ medicinesList.forEach((medicine) => {
         medName.style.color = 'red';
     }
 });
+}
+
+checkStock();
