@@ -1,4 +1,4 @@
-const list = document.querySelector('#drugs-list ul');
+const list = document.querySelector('#medicines-list ul');
 list.addEventListener('click',function(e){
     if(e.target.className==='delete'){
         const li = e.target.parentElement;
@@ -36,4 +36,18 @@ addMed.addEventListener('submit',function(e){
     li.appendChild(medQuantity);
     li.appendChild(deleteBtn);
     list.appendChild(li);
+});
+
+const medicinesList = document.querySelectorAll('#medicines-list li');
+
+medicinesList.forEach((medicine) => {
+    const medquantity = medicine.querySelector('.quantity');
+    const medName = medicine.querySelector('.name');
+
+    const value = Number(medquantity.textContent);
+
+    if (value <= 5) {
+        medquantity.style.color = 'red';
+        medName.style.color = 'red';
+    }
 });

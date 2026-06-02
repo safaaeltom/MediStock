@@ -41,22 +41,22 @@ h1, h2{
     color: #444;
 }
 
-#drugs-list, #add-medicine{
+#medicines-list, #add-medicine{
     margin: 20px;
 }
 
-#drugs-list ul{
+#medicines-list ul{
     list-style: none;
     padding: 0;
 }
 
-#drugs-list li{
+#medicines-list li{
     padding: 10px;
     border-left: 5px solid #a87171;
     margin: 10px;
 }
 
-#drugs-list li:hover{
+#medicines-list li:hover{
     background: #eee;
 }
 
