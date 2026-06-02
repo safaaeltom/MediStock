@@ -9,15 +9,28 @@ list.addEventListener('click',function(e){
         list.removeChild(li);
     }
 
-    // edit medicine
-    if (e.target.className==='edit') {
+    // edit and save medicine
+    if (e.target.classList.contains('edit')) {
 
     const medName = li.querySelector('.name');
     const medQuantity = li.querySelector('.quantity');
 
-    if (li.classList.contains('editing')) return;
+     // contains editing => save mode
+    if (li.classList.contains('editing')) {
 
-    // Edit mode
+    const nameInput = medName.querySelector('input');
+    const qtyInput = medQuantity.querySelector('input');
+
+    medName.textContent = nameInput.value;
+    medQuantity.textContent = qtyInput.value;
+
+    li.classList.remove('editing');
+
+    checkStock();
+    return;
+}
+
+    // edit mode
     li.classList.add('editing');
 
     const nameInput = document.createElement('input');
@@ -32,7 +45,8 @@ list.addEventListener('click',function(e){
     medName.appendChild(nameInput);
     medQuantity.appendChild(qtyInput);
 
-}
+    nameInput.focus();
+   };
 });
 
 
