@@ -64,7 +64,7 @@ h1, h2{
     background: #eee;
 }
 
-.delete{
+.delete, .edit{
     color: #a87171;
     cursor: pointer;
     float: right;
