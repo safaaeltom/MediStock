@@ -120,3 +120,20 @@ hideList.addEventListener('change', function(e){
         list.style.display='block';
     }
 });
+
+// search medicines
+const searchBar = document.forms['search-medicine'].querySelector('input');
+searchBar.addEventListener('keyup', function(e){
+    const term = e.target.value.toLowerCase();
+    const medicines = list.getElementsByTagName('li');
+
+    Array.from(medicines).forEach(function(medicine){
+        const medicineName = medicine.firstElementChild.textContent.toLowerCase();
+
+        if(medicineName.indexOf(term) != -1){
+            medicine.style.display = 'flex';
+        }else{
+            medicine.style.display = 'none';
+        }
+    })
+})
