@@ -110,3 +110,13 @@ medicinesList.forEach((medicine) => {
 }
 
 checkStock();
+
+// hide medicines list
+const hideList = document.querySelector('#hide-medicines #hide-list');
+hideList.addEventListener('change', function(e){
+    if(hideList.checked){
+        list.style.display='none';
+    }else{
+        list.style.display='block';
+    }
+});

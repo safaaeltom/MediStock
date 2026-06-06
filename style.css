@@ -70,9 +70,18 @@ h1, h2{
     float: right;
 }
 
+#hide-medicines{
+    background: #eee;
+    padding: 15px;
+}
+
+#hide-list{
+    margin-right: 10px;
+}
+
 #add-medicine input{
     padding: 8px;
-    margin: 10px 0;
+    margin: 5px 0;
     border: 1px solid #ddd;
     border-radius: 6px;
     font-size: 16px;
